@@ -285,5 +285,5 @@ def home():
     return {"message": "Welcome to the API with Translation, TTS, and ASR"}
 
 if __name__ == "__main__":
-    port = int(os.environ.get("PORT", 3100))
+    port = int(os.environ.get("PORT", 8000))
     uvicorn.run(app, host="0.0.0.0", port=port)
